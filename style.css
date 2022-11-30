@@ -52,7 +52,7 @@
     color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .content {
         width: 300px;
     }
