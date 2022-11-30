@@ -1,0 +1,68 @@
+@keyframes twinkle {
+
+    from {backrgound-position: 0}
+    to {background-position: -100px 0}
+  }
+
+.main {
+    /* background-color: rgb(122, 118, 102, .4); */
+    margin: 0 auto;
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    animation: 50s twinkle infinite;
+    animation-timing-function: linear;
+  
+}
+
+.content {
+    background-color: rgb(219, 215, 210, .4);
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 800px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.form__button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #FADADD;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: #87CEEB, 20px;
+    width: 200px;
+    transition: .4s ease;
+    font-size: 24px;
+    color: #37332F;
+    
+}
+
+.form__button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.form__text {
+    margin: 0 20px;
+    font-size: 36px;
+    color: black;
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        width: 300px;
+    }
+
+    .form__button {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .form__text {
+        font-size: 18px;
+    }
+}
