@@ -1,68 +1,127 @@
 @keyframes twinkle {
-
-    from {backrgound-position: 0}
-    to {background-position: -100px 0}
+  from {
+    backrgound-position: 0;
   }
+  to {
+    background-position: -100px 0;
+  }
+}
 
 .main {
-    /* background-color: rgb(122, 118, 102, .4); */
-    margin: 0 auto;
-    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-    animation: 50s twinkle infinite;
-    animation-timing-function: linear;
-  
+  /* background-color: rgb(122, 118, 102, .4); */
+  margin: 0 auto;
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  animation: 50s twinkle infinite;
+  animation-timing-function: linear;
 }
 
 .content {
-    background-color: rgb(219, 215, 210, .4);
-    margin: 50px auto;
-    border-radius: 10px;
-    width: 800px;
+  background-color: rgb(219, 215, 210, 0.4);
+  margin: 50px auto;
+  border-radius: 10px;
+  width: 800px;
 }
 
+.form__random {
+}
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
 }
 
 .form__button {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    background-color: #FADADD;
-    border: 0;
-    border-radius: 50px;
-    box-shadow: #87CEEB, 20px;
-    width: 200px;
-    transition: .4s ease;
-    font-size: 24px;
-    color: #37332F;
-    
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #fadadd;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 3px 3px rgb(250, 218, 221, 0.1);
+  width: 200px;
+  transition: 0.4s ease;
+  font-size: 24px;
+  color: #37332f;
 }
 
 .form__button:hover {
-    opacity: .5;
-    cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .form__text {
-    margin: 0 20px;
-    font-size: 36px;
-    color: black;
+  margin: 0 20px;
+  font-size: 36px;
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {
-    .content {
-        width: 300px;
-    }
+  .content {
+    width: 300px;
+  }
 
-    .form__button {
-        width: 150px;
-        font-size: 14px;
-    }
+  .form__button {
+    width: 150px;
+    font-size: 14px;
+  }
 
-    .form__text {
-        font-size: 18px;
-    }
+  .form__text {
+    font-size: 18px;
+  }
+}
+
+.header {
+  width: 800px;
+  background-color: rgb(219, 215, 210, 0.5);
+  margin: 20px auto;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: black;
+}
+
+.header__logo {
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+.menu__button {
+  margin-bottom: 20px;
+  width: 100px;
+  transition: 0.4s ease;
+  font-size: 24px;
+  color: #37332f;
+  background-color: #fadadd;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 3px 3px rgb(250, 218, 221, 0.1);
+}
+
+.menu__button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.enable {
+  display: flex;
+}
+
+.disabled {
+  display: none;
+}
+
+.form__manual {
+  /* display: none; */
+}
+
+.unvisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }

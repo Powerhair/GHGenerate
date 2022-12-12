@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body class="main">
+  </head>
+  <header class="header">
+    <img class="header__logo" src="" alt="" />
+    <div class="menu">
+      <button class="menu__button" id="buttonRandom" type="button">
+        button_1
+      </button>
+      <button class="menu__button" id="buttonCustom" type="button">
+        button_2
+      </button>
+      <button class="menu__button" id="buttonThree" type="button">
+        button_3
+      </button>
+    </div>
+  </header>
+  <body class="main">
     <main class="content">
-        <form class="form">
-            <button class="form__button" type="button">Доброй ночи!</button>
-            <output class="form__text"></output>
-        </form>
+      <form class="form form__random disabled">
+        <button class="form__button form__button-GN" type="button">
+          Доброй ночи!
+        </button>
+        <p class="form__text"></p>
+        <button id="copyBtn" class="form__button unvisible" type="button">
+          Копировать
+        </button>
+      </form>
+      <form class="form form__manual disabled">
+        <button class="form__button form__button-Manual" type="button">
+          Доброй ночи!
+        </button>
+        <input type="text" class="form__offer" />
+        <button type="submit" class="form__button form__button-offer">
+          Пожелать
+        </button>
+        <p class="form__text"></p>
+      </form>
+      <form class="form form__three disabled">
+        <button class="form__button" type="button">Злой ночи!</button>
+        <p class="form__text"></p>
+      </form>
     </main>
-    <script src="./gn.js" ></script>
-</body>
+    <script src="./gn.js"></script>
+  </body>
 </html>
