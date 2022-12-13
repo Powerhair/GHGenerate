@@ -7,20 +7,30 @@
   }
 }
 
-.main {
-  /* background-color: rgb(122, 118, 102, .4); */
+/* .main {
+  background-color: rgb(122, 118, 102, .4);
   margin: 0 auto;
   background: #000
     url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
     center;
   animation: 50s twinkle infinite;
   animation-timing-function: linear;
+} */
+
+.main {
+  background-color: #100e19;
+  margin: 0 auto;
 }
 
 .content {
-  background-color: rgb(219, 215, 210, 0.4);
+  background: rgb(0, 0, 0, 0.1)
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  animation: 50s twinkle infinite;
+  animation-timing-function: linear;
   margin: 50px auto;
   border-radius: 10px;
+  box-shadow: 0 0 8px 8px #242425 inset;
   width: 800px;
 }
 
@@ -36,14 +46,14 @@
 .form__button {
   margin-top: 20px;
   margin-bottom: 50px;
-  background-color: #fadadd;
+  background-color: transparent;
   border: 0;
-  border-radius: 50px;
-  box-shadow: 3px 3px rgb(250, 218, 221, 0.1);
+  border-radius: 50px 0 0 50px;
   width: 200px;
   transition: 0.4s ease;
   font-size: 24px;
-  color: #37332f;
+  color: #c5b6a8;
+  border-bottom: 2px solid currentColor;
 }
 
 .form__button:hover {
@@ -54,7 +64,7 @@
 .form__text {
   margin: 0 20px;
   font-size: 36px;
-  color: black;
+  color: #c5b6a8;
 }
 
 @media screen and (max-width: 1024px) {
@@ -73,32 +83,33 @@
 }
 
 .header {
-  width: 800px;
-  background-color: rgb(219, 215, 210, 0.5);
-  margin: 20px auto;
-  border-radius: 50px;
-  border: 1px solid;
-  border-color: black;
+  max-width: 500px;
+  background-color: transparent;
+  margin: 20px 0 20px 50px;
 }
 
 .header__logo {
 }
+
 .menu {
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  justify-content: center;
+  gap: 10px;
+  justify-content: start;
+  border-bottom: 2px solid #c5b6a8;
+  border-radius: 50px 0 0 50px;
 }
+
 .menu__button {
   margin-bottom: 20px;
   width: 100px;
   transition: 0.4s ease;
-  font-size: 24px;
-  color: #37332f;
-  background-color: #fadadd;
+  font-size: 16px;
+  color: #c5b6a8;
+  background-color: transparent;
   border: 0;
-  border-radius: 50px;
-  box-shadow: 3px 3px rgb(250, 218, 221, 0.1);
+  /* box-shadow: 3px 3px rgb(250, 218, 221, 0.1); */
 }
 
 .menu__button:hover {
