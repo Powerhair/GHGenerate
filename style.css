@@ -147,3 +147,16 @@
 .visible {
   visibility: visible;
 }
+
+.copy__button {
+  position: absolute;
+  top: 370px;
+  right: 80px;
+  width: 50px;
+}
+
+.form__copy-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
